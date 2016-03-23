@@ -1,8 +1,8 @@
-import datetime
 import hashlib
 import requests
 import base64
 
+import dateutil.parser
 from pyasn1.codec.der import encoder, decoder
 from pyasn1_modules import rfc2459
 from pyasn1.type import univ
@@ -48,7 +48,7 @@ def get_timestamp(tst):
         if substrate:
             raise ValueError("extra data after tst")
         genTime = tstinfo.getComponentByName('genTime')
-        return datetime.datetime.strptime(str(genTime), '%Y%m%d%H%M%SZ')
+        return dateutil.parser.parse(str(genTime))
     except PyAsn1Error, e:
         raise ValueError('not a valid TimeStampToken', e)
 

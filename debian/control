@@ -7,7 +7,7 @@ Standards-Version: 3.9.1
 
 Package: python-rfc3161
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pyasn1, python-pyasn1-modules, python-m2crypto
+Depends: ${misc:Depends}, ${python:Depends}, python-pyasn1, python-pyasn1-modules, python-m2crypto, python-dateutil
 Description: Python implementation of the RFC3161 specification
  A simple client library for cryptographic timestamping service implementing the
  protocol from RFC3161.

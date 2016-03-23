@@ -12,6 +12,7 @@ setup(name='rfc3161',
       packages=['rfc3161'],
       install_requires=[
           'pyasn1',
+          'python-dateutil',
           'pyasn1_modules',
           'requests',
           'M2Crypto'])
