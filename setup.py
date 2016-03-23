@@ -2,7 +2,7 @@
 from setuptools import setup
 
 setup(name='rfc3161',
-      version='1.0.6',
+      version='1.0.7',
       license='MIT',
       url='https://dev.entrouvert.org/projects/python-rfc3161',
       description='Python implementation of the RFC3161 specification, using pyasn1',
